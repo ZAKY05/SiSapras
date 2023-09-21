@@ -40,10 +40,10 @@
                         <td>
                             <a href="/deleteBarang/{{ $dt->id_barang }}" class="btn btn-dark"><i class="fas fa-trash"></i></a>
 
-                            <button type="button" class="btn btn-warning" data-toggle="modal"
+                            {{-- <button type="button" class="btn btn-warning" data-toggle="modal"
                             data-target="#editmodal2{{ $dt->id_barang }}">
                             <i class="fas fa-user-edit"></i>
-                            </button>
+                            </button> --}}
                         </td>
                         
                         

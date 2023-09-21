@@ -20,13 +20,16 @@ use App\Http\Controllers\StokbarangController;
 |
 */
 
+Route::get('/register', [LoginController::class, 'reg']);
+Route::post('/register', [LoginController::class, 'doRegister']);
+
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login ', [LoginController::class, 'authenticate']);
 Route::get('/', [DashboardController::class, 'index']);
 
 Route::get('/daftar-barang', [BarangController::class, 'index']);
 Route::get('/nama-peminjam', [PeminjamController::class, 'index'])->name('nama-peminjam');
-Route::get('/deletePeminjaman/{id}', [PeminjamController::class, 'delete']); 
+Route::get('/deletePeminjaman/{id}', [PeminjamController::class, 'delete']);
 Route::get('/history', [HistoriController::class, 'index']);
 Route::get('/deleteBarang/{id}', [BarangController::class, 'delete']);
 // Route::delete('/nama-peminjam/delete/{id}',[PeminjamController::class,'delete']);

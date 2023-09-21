@@ -17,6 +17,7 @@
                             <th>No</th>
                             <th>Nama peminjam</th>
                             <th>Kelas</th>
+                            <th>Kode barang</th>
                             <th>Barang</th>
                             <th>Kategori</th>
                             <th>Tanggal</th>
@@ -31,6 +32,7 @@
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $dts->nama_peminjam }}</td>
                                 <td>{{ $dts->kelas }}</td>
+                                <td>{{ $dts->Kode_barang }}</td>
                                 <td>{{ $dts->nama_barang }}</td>
                                 <td>{{ $dts->kategori }}</td>
                                 <td>{{ $dts->created_at}}</td>

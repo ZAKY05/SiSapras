@@ -22,24 +22,24 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-success">
 
     <div class="container">
 
         <!-- Outer Row -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-5">
 
             <div class="col-xl-10 col-lg-12 col-md-9">
 
-                <div class="card o-hidden border-0 shadow-lg my-5">
-                    <div class="card-body p-0">
+                <div class="card o-hidden border-0 shadow-lg my-5" style="width: 50%; margin-left:200px;">
+                   
                         <!-- Nested Row within Card Body -->
-                        <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block "></div>
-                            <div class="col-lg-6">
+                        
+                            
+                            
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Si Sapras</h1>
+                                        <h1 class="h4 text-gray-900 mb-4"><i class="fas fa-store-alt"></i>  Si Sapras</h1>
                                     </div>
                                     <form method="POST" action="/login">
                                         @csrf
@@ -59,8 +59,11 @@
                                                     Me</label>
                                             </div>
                                         </div>
+                                        <div class="text-center">
+                                            <a class="small" href="register">Buat akun baru</a>
+                                        </div>
 
-                                        <button type="submit" class="btn btn-primary btn-user btn-block">
+                                        <button type="submit" class="btn btn-success btn-user btn-block">
                                             Login
                                         </button>
                                         <hr>

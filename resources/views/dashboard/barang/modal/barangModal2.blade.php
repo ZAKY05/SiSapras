@@ -13,11 +13,12 @@
                         @csrf
                         <div class="input-group mb-3">
                         </div>
-                        {{-- <div class="form-group">
+                        <div class="form-group">
                             <label for="name">Kode Barang</label>
-                            <input type="text" class="form-control" name="nama_barang" autocomplete="off"
-                                placeholder="Masukkan kode">
-                        </div> --}}
+                            <input type="text" class="form-control" id="disabledInput" name="nama_barang" autocomplete="off"
+                                placeholder="Masukkan kode"> <br>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1"> tulis manual kode
+                        </div>
                         <div class="form-group">
                             <label for="name">Nama Barang</label>
                             <input type="text" class="form-control" name="nama_barang" autocomplete="off"
@@ -40,3 +41,14 @@
         </div>
     </div>
 </div>
+@push('js')
+<script>
+    $(document).ready(function () {
+        $("#exampleCheck1").click(function () {
+            $("#disabledInput").prop("disabled", function (i, val) {
+                return !val;
+            });
+        });
+    });
+</script>
+@endpush

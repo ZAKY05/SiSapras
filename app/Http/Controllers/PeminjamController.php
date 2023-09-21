@@ -17,6 +17,7 @@ class PeminjamController extends Controller
       $data = DB::table('nama_peminjam')
       ->join('barang', 'nama_peminjam.id_barang', 'barang.id_barang')
       ->get();
+      /* SELECT * FROM nama_peminjam JOIN barang ON barang.id_barang = nama_peminjam.id_barang */
       $barang = DB::table('barang')->get();
 
       // dd($data);

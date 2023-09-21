@@ -7,7 +7,7 @@
 
   <!-- Topbar Navbar -->
   <div class="container">
-    <div class="text fs-4" style="text-align: center; width:100%; font-size:25px;"><i class="fas fa-store-alt"></i> SISapras Aplikasi Sarana dan Prasarana</div>
+    <div class="text fs-4" style="text-align: center; width:100%; font-size:25px;"></div>
 
 
   </div>

@@ -15,6 +15,6 @@ class nama_peminjam extends Model
 
     protected $guarded =['id'];
     public function barang(){
-        return $this->belongsTo(barang::class);
+        return $this->belongsTo(barang::class, 'id_barang');
     }
 }
